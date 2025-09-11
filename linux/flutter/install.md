@@ -24,6 +24,11 @@ Install Flutter plugin
 flutter doctor --android-licenses
 ```
 
+## Hardware acceleration
+
+https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio&hl=pl#vm-linux
+
+
 ## Emulators
 ```
 flutter emulators

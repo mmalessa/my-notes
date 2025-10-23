@@ -64,3 +64,13 @@ sprawdzić, np:
 ```
 kubectx
 ```
+
+## Złagodzenie PodSecurity dla namespace default
+
+Tylko w środowisku dev!
+```
+kubectl taint nodes --all node-role.kubernetes.io/control-plane-
+
+# nie wiem czy to jest potrzebne
+kubectl label namespace default pod-security.kubernetes.io/enforce=privileged --overwrite
+```
